@@ -1,3 +1,5 @@
+package Lab08;
+
 public class DuckCall implements Quackable {
 
     public void quack() {

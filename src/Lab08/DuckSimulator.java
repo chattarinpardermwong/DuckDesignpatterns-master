@@ -1,3 +1,5 @@
+package Lab08;
+
 public class DuckSimulator {
     public static void main(String[] args) {
         DuckSimulator simulator = new DuckSimulator();
@@ -7,10 +9,10 @@ public class DuckSimulator {
     }
 
     void simulate(AbstractDuckFactory duckFactory) {
-//        Quackable mallardDuck = new QuackEcho(new QuackCounter(new MallardDuck()));
-//        Quackable redheadDuck = new QuackEcho(new QuackCounter(new RedheadDuck()));
-//        Quackable rubberDuck = new QuackCounter(new QuackEcho(new RubberDuck()));
-//        Quackable duckCall = new QuackCounter(new QuackEcho(new DuckCall()));
+//        Lab08.Quackable mallardDuck = new Lab08.QuackEcho(new Lab08.QuackCounter(new Lab08.MallardDuck()));
+//        Lab08.Quackable redheadDuck = new Lab08.QuackEcho(new Lab08.QuackCounter(new Lab08.RedheadDuck()));
+//        Lab08.Quackable rubberDuck = new Lab08.QuackCounter(new Lab08.QuackEcho(new Lab08.RubberDuck()));
+//        Lab08.Quackable duckCall = new Lab08.QuackCounter(new Lab08.QuackEcho(new Lab08.DuckCall()));
         Quackable mallardDuck = duckFactory.createMallardDuck();
         Quackable redheadDuck = duckFactory.createRedheadDuck();
         Quackable rubberDuck = duckFactory.createRubberDuck();
@@ -41,9 +43,9 @@ public class DuckSimulator {
 
         flockOfDucks.add(flockOfMallards);
 
-        System.out.println("\nDuck Simulator: Whole Flock Simulation");
+        System.out.println("\nDuck Simulator: Whole Lab08.Flock Simulation");
         simulate(flockOfDucks);
-        System.out.println("\nDuck Simulator: Mallard Flock Simulation");
+        System.out.println("\nDuck Simulator: Mallard Lab08.Flock Simulation");
         simulate(flockOfMallards);
 
         simulate(mallardDuck);
