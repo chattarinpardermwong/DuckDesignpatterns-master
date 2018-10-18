@@ -19,12 +19,12 @@ public class Standby implements CoinStation {
 
     @Override
     public void getTicket() {
-        System.err.println("ERROR");
+        System.err.println("Error");
     }
 
     @Override
     public void insertCoin(int amount) {
-        System.err.println("ERROR");
+        System.err.println("Error");
     }
 
 

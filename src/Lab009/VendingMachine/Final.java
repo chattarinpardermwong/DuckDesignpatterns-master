@@ -9,12 +9,12 @@ public class Final implements CoinStation {
 
     @Override
     public void insertCoin(int amount) {
-        System.err.println("ERROR");
+        System.err.println("Error");
     }
 
     @Override
     public void chooseDestination(String station) {
-        System.err.println("ERROR");
+        System.err.println("Error");
     }
 
     @Override

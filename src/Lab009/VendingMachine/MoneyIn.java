@@ -13,21 +13,21 @@ public class MoneyIn implements CoinStation {
         if (curAmount >= vendingMachine.getPrice()) {
             if (curAmount > vendingMachine.getPrice())
                 System.out.println("Change " + (curAmount - vendingMachine.getPrice()));
-            System.out.println("Complete:Get ticket");
+            System.out.println("Completed :You Got ticket!");
             vendingMachine.setAmount(0);
             vendingMachine.setPrice(0);
             vendingMachine.setCurrentCoinStation(vendingMachine.getEnd());
         } else if (curAmount < vendingMachine.getPrice())
-            System.out.println("Pls Insert Coin " + (vendingMachine.getPrice() - curAmount));
+            System.out.println("Please give me a coin " + (vendingMachine.getPrice() - curAmount));
     }
 
     @Override
     public void chooseDestination(String station) {
-        System.err.println("ERROR");
+        System.err.println("Error");
     }
 
     @Override
     public void getTicket() {
-        System.err.println("ERROR");
+        System.err.println("Error");
     }
 }
